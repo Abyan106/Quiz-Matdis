@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Peluang Diskrit</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Unna&display=swap" rel="stylesheet">
+
+<style>
+  body { font-family: 'Raleway', sans-serif; }
+  h1,h2,h3 { font-family: 'Unna', serif; }
+
+  .parallax {
+    background-image: url('img/parallax.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+
+  .fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+<!-- ================= HERO ================= -->
+<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904"
+       class="absolute w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 fade-up px-6">
+    <h1 class="text-5xl font-bold mb-4">Peluang Diskrit</h1>
+    <p class="max-w-2xl mx-auto">
+      Dalam kehidupan sehari-hari, banyak peristiwa yang tampak acak, seperti pelemparan koin,
+      dadu, maupun sistem gacha dalam permainan. Secara matematis, kejadian tersebut dapat
+      dianalisis menggunakan konsep peluang. Salah satu bentuknya adalah peluang diskrit,
+      yaitu peluang yang berkaitan dengan hasil yang dapat dihitung dan didaftarkan secara jelas.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PARALLAX ================= -->
+<section class="parallax min-h-screen flex items-center justify-center text-white text-center px-6">
+  <div class="bg-black/50 p-8 rounded-xl max-w-2xl fade-up">
+    <h2 class="text-3xl font-bold mb-3">Konsep Dasar Peluang Diskrit</h2>
+    <p>
+      Peluang diskrit merupakan ukuran kemungkinan suatu kejadian dalam ruang sampel yang terbatas.
+      Ruang sampel adalah kumpulan seluruh hasil yang mungkin terjadi. Sebagai contoh, pada
+      pelemparan koin, ruang sampelnya terdiri dari dua kemungkinan, yaitu angka dan gambar.
+      <br><br>
+      Untuk menghitung peluang suatu kejadian digunakan rumus:
+      <br><br>
+      <b>P(A) = n(A) / n(S)</b>
+      <br><br>
+      dimana n(A) adalah jumlah kejadian yang diinginkan dan n(S) adalah jumlah seluruh
+      kemungkinan dalam ruang sampel.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 ================= -->
+<section class="py-20 px-6">
+  <h2 class="text-3xl font-bold text-center mb-10 fade-up">
+    Contoh dalam Kehidupan Sehari-hari
+  </h2>
+
+  <div class="max-w-5xl mx-auto overflow-hidden">
+    <div id="carousel1" class="flex transition duration-500">
+
+      <!-- CARD 1 -->
+      <div class="min-w-full p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+
+          <img src="img/card1.jpg"
+               class="w-full h-[420px] object-cover">
+
+          <div class="p-6 text-center">
+            <p>
+              Pada pelemparan dadu, terdapat 6 kemungkinan hasil yaitu 1 hingga 6.
+              Peluang muncul angka tertentu, misalnya 3, adalah 1/6.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="min-w-full p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+
+          <img src="img/card2.jpg"
+               class="w-full h-[420px] object-cover">
+
+          <div class="p-6 text-center">
+            <p>
+              Jika yang diinginkan adalah angka genap (2, 4, 6), maka terdapat 3 kemungkinan
+              dari total 6, sehingga peluangnya adalah 3/6 atau 1/2.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="min-w-full p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+
+          <img src="img/card3.jpg"
+               class="w-full h-[420px] object-cover">
+
+          <div class="p-6 text-center">
+            <p>
+              Dalam kartu remi berjumlah 52 kartu, peluang mendapatkan kartu As adalah 4/52
+              atau 1/13, sedangkan peluang mendapatkan kartu merah adalah 26/52 atau 1/2.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center gap-4 mt-6">
+      <button onclick="slide('carousel1', -1)" class="px-4 py-2 bg-black text-white rounded">Prev</button>
+      <button onclick="slide('carousel1', 1)" class="px-4 py-2 bg-black text-white rounded">Next</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 ================= -->
+<section class="py-20 px-6 bg-gray-200">
+  <h2 class="text-3xl font-bold text-center mb-10 fade-up">
+    Latihan Soal
+  </h2>
+
+  <div class="max-w-5xl mx-auto overflow-hidden">
+    <div id="carousel2" class="flex transition duration-500">
+
+      <div class="min-w-full p-6">
+        <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+          Dalam 5 kali pelemparan koin, berapakah peluang muncul tepat 3 sisi angka?
+        </div>
+      </div>
+
+      <div class="min-w-full p-6">
+        <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+          Jika dua dadu dilempar bersamaan, berapakah peluang jumlah keduanya adalah 4?
+        </div>
+      </div>
+
+      <div class="min-w-full p-6">
+        <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+          Berapakah peluang mendapatkan kombinasi Straight Flush dari 5 kartu yang diambil secara acak?
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center gap-4 mt-6">
+      <button onclick="slide('carousel2', -1)" class="px-4 py-2 bg-black text-white rounded">Prev</button>
+      <button onclick="slide('carousel2', 1)" class="px-4 py-2 bg-black text-white rounded">Next</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5 ================= -->
+<section class="py-20 text-center px-6">
+
+  <h2 class="text-3xl font-bold mb-6 fade-up">Simulasi Peluang Diskrit</h2>
+
+  <p class="max-w-2xl mx-auto mb-8 fade-up">
+    Simulasi berikut menggambarkan konsep peluang diskrit melalui sistem gacha.
+    Setiap kategori memiliki probabilitas yang berbeda, sehingga hasil yang diperoleh
+    mencerminkan distribusi peluang yang tidak merata.
+  </p>
+  <div id="gachaCard"
+       class="mx-auto w-72 h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500">
+  </div>
+
+  <button onclick="gacha()"
+          class="px-6 py-3 bg-purple-600 text-white rounded-xl hover:bg-purple-700 transition">
+    Gacha
+  </button>
+
+</section>
+
+<script>
+const tiers = [
+  {
+    name: "Common",
+    chance: 60,
+    items: [
+      {
+        name: "Awa Subaru",
+        img: "img/subaru.jpg"
+      },
+      {
+        name: "Nina Iseri",
+        img: "img/nina.jpg"
+      },
+      {
+        name: "Momoka Kawaragi",
+        img: "img/momoka.jpg"
+      },
+      {
+        name: "Rupa",
+        img: "img/rupa.jpg"
+      },
+      {
+        name: "Tomo Ebizuka",
+        img: "img/tomo.png"
+      },
+    ]
+  },
+  {
+    name: "Rare",
+    chance: 30,
+    items: [
+      {
+        name: "Character C",
+        img: "YOUR_IMAGE_3"
+      }
+    ]
+  },
+  {
+    name: "Legendary",
+    chance: 10,
+    items: [
+      {
+        name: "Character SSS 🔥",
+        img: "YOUR_IMAGE_4"
+      }
+    ]
+  }
+]
+
+function getTier() {
+  let rand = Math.random() * 100
+
+  for (let t of tiers) {
+    if (rand < t.chance) return t
+    rand -= t.chance
+  }
+}
+
+function gacha() {
+  const card = document.getElementById('gachaCard')
+
+  const tier = getTier()
+  const item = tier.items[Math.floor(Math.random() * tier.items.length)]
+
+  card.innerHTML = `
+    <img src="${item.img}" class="w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <div class="absolute bottom-0 w-full p-4 text-white text-center">
+      <div class="text-lg font-bold">${item.name}</div>
+      <div class="text-sm opacity-80">${tier.name}</div>
+    </div>
+  `
+
+  card.classList.remove('opacity-0','translate-y-10','scale-95')
+  card.classList.add('scale-100')
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const els = document.querySelectorAll('.fade-up')
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('show')
+      }
+    })
+  }, { threshold: 0.1 })
+
+  els.forEach(el => obs.observe(el))
+})
+</script>
+
+</body>
+</html>
