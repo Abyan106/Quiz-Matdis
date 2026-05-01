@@ -1,217 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Peluang Diskrit</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Peluang Diskrit</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Unna&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Unna&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-  body { font-family: 'Raleway', sans-serif; }
-  h1,h2,h3 { font-family: 'Unna', serif; }
+    <style>
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: 'Unna', serif;
+      }
 
-  .parallax {
-    background-image: url('img/parallax.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-  }
+      .parallax {
+        background-image: url('img/parallax.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
 
-  .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
-  }
+      .fade-up {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease;
+      }
 
-  .fade-up.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+      .fade-up.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-  #carousel1, #carousel2 {
-    will-change: transform;
-  }
-</style>
-</head>
+      #carousel1,
+      #carousel2 {
+        will-change: transform;
+      }
+    </style>
+  </head>
 
-<body class="bg-gray-100 text-gray-800">
+  <body class="bg-gray-100 text-gray-800">
+    <!-- HERO -->
+    <section
+      class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1509228468518-180dd4864904"
+        class="absolute w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-black/60"></div>
 
-<!-- HERO -->
-<section class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
-  <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904"
-       class="absolute w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 fade-up px-6">
+        <h1 class="text-5xl font-bold mb-4">Peluang Diskrit</h1>
+        <p class="max-w-2xl mx-auto">
+          Peluang diskrit adalah peluang dari suatu kejadian dengan hasil yang
+          dapat dihitung secara jelas.
+        </p>
+      </div>
+    </section>
 
-  <div class="relative z-10 fade-up px-6">
-    <h1 class="text-5xl font-bold mb-4">Peluang Diskrit</h1>
-    <p class="max-w-2xl mx-auto">
-      Peluang diskrit adalah peluang dari suatu kejadian dengan hasil yang dapat dihitung secara jelas.
-    </p>
-  </div>
-</section>
+    <!-- PARALLAX -->
+    <section
+      class="parallax min-h-screen flex items-center justify-center text-white text-center px-6"
+    >
+      <div class="bg-black/50 p-8 rounded-xl max-w-2xl fade-up">
+        <h2 class="text-3xl font-bold mb-3">Konsep Dasar</h2>
+        <p>
+          Rumus peluang:
+          <br /><br />
+          <b>P(A) = n(A) / n(S)</b>
+        </p>
+      </div>
+    </section>
 
-<!-- PARALLAX -->
-<section class="parallax min-h-screen flex items-center justify-center text-white text-center px-6">
-  <div class="bg-black/50 p-8 rounded-xl max-w-2xl fade-up">
-    <h2 class="text-3xl font-bold mb-3">Konsep Dasar</h2>
-    <p>
-      Rumus peluang:
-      <br><br>
-      <b>P(A) = n(A) / n(S)</b>
-    </p>
-  </div>
-</section>
+    <!-- CONTOHHH -->
+    <section class="py-20 px-6">
+      <h2 class="text-3xl font-bold text-center mb-10 fade-up">
+        Contoh Kehidupan Sehari-hari
+      </h2>
 
-<!-- CONTOHHH -->
-<section class="py-20 px-6">
-  <h2 class="text-3xl font-bold text-center mb-10 fade-up">
-    Contoh Kehidupan Sehari-hari
-  </h2>
+      <div class="max-w-5xl mx-auto overflow-hidden relative">
+        <div
+          id="carousel1"
+          class="flex w-full transition-transform duration-500 ease-in-out"
+        >
+          <div class="min-w-full p-6">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+              <img src="img/card1.jpg" class="w-full h-[420px] object-cover" />
+              <div class="p-6 text-center">
+                Peluang muncul angka 3 pada dadu adalah 1/6
+              </div>
+            </div>
+          </div>
 
-  <div class="max-w-5xl mx-auto overflow-hidden relative">
-    <div id="carousel1" class="flex w-full transition-transform duration-500 ease-in-out">
+          <div class="min-w-full p-6">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+              <img src="img/card2.jpg" class="w-full h-[420px] object-cover" />
+              <div class="p-6 text-center">
+                Peluang angka genap pada dadu adalah 1/2
+              </div>
+            </div>
+          </div>
 
-      <div class="min-w-full p-6">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-          <img src="img/card1.jpg" class="w-full h-[420px] object-cover">
-          <div class="p-6 text-center">
-            Peluang muncul angka 3 pada dadu adalah 1/6
+          <div class="min-w-full p-6">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+              <img src="img/card3.jpg" class="w-full h-[420px] object-cover" />
+              <div class="p-6 text-center">Peluang kartu As adalah 1/13</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="min-w-full p-6">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-          <img src="img/card2.jpg" class="w-full h-[420px] object-cover">
-          <div class="p-6 text-center">
-            Peluang angka genap pada dadu adalah 1/2
+        <div class="flex justify-center gap-4 mt-6">
+          <button
+            onclick="slide('carousel1', -1)"
+            class="px-4 py-2 bg-black text-white rounded"
+          >
+            Prev
+          </button>
+          <button
+            onclick="slide('carousel1', 1)"
+            class="px-4 py-2 bg-black text-white rounded"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATSOL -->
+    <section class="py-20 px-6 bg-gray-200">
+      <h2 class="text-3xl font-bold text-center mb-10 fade-up">Latihan Soal</h2>
+
+      <div class="max-w-5xl mx-auto overflow-hidden relative">
+        <div
+          id="carousel2"
+          class="flex w-full transition-transform duration-500 ease-in-out"
+        >
+          <div class="min-w-full p-6">
+            <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+              Peluang muncul 3 angka dari 5 koin?
+            </div>
+          </div>
+
+          <div class="min-w-full p-6">
+            <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+              Peluang jumlah dua dadu = 4?
+            </div>
+          </div>
+
+          <div class="min-w-full p-6">
+            <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
+              Berapakah peluang mendapatkan kombinasi Straight Flush dari 5 kartu yang diambil secara acak?
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="min-w-full p-6">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-          <img src="img/card3.jpg" class="w-full h-[420px] object-cover">
-          <div class="p-6 text-center">
-            Peluang kartu As adalah 1/13
-          </div>
+        <div class="flex justify-center gap-4 mt-6">
+          <button
+            onclick="slide('carousel2', -1)"
+            class="px-4 py-2 bg-black text-white rounded"
+          >
+            Prev
+          </button>
+          <button
+            onclick="slide('carousel2', 1)"
+            class="px-4 py-2 bg-black text-white rounded"
+          >
+            Next
+          </button>
         </div>
       </div>
+    </section>
 
-    </div>
+    <!-- GACHA -->
+    <section class="py-20 text-center px-6">
+      <h2 class="text-3xl font-bold mb-6 fade-up">Simulasi Gacha</h2>
 
-    <div class="flex justify-center gap-4 mt-6">
-      <button onclick="slide('carousel1', -1)" class="px-4 py-2 bg-black text-white rounded">Prev</button>
-      <button onclick="slide('carousel1', 1)" class="px-4 py-2 bg-black text-white rounded">Next</button>
-    </div>
-  </div>
-</section>
+      <p class="max-w-2xl mx-auto mb-8 fade-up">
+        Simulasi berikut menggambarkan konsep peluang diskrit melalui sistem
+        gacha. Setiap kategori memiliki probabilitas yang berbeda, sehingga
+        hasil yang diperoleh mencerminkan distribusi peluang yang tidak merata.
+      </p>
 
-<!-- LATSOL -->
-<section class="py-20 px-6 bg-gray-200">
-  <h2 class="text-3xl font-bold text-center mb-10 fade-up">
-    Latihan Soal
-  </h2>
+      <div
+        id="gachaCard"
+        class="mx-auto w-72 h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500"
+      ></div>
 
-  <div class="max-w-5xl mx-auto overflow-hidden relative">
-    <div id="carousel2" class="flex w-full transition-transform duration-500 ease-in-out">
+      <button
+        onclick="gacha()"
+        class="px-6 py-3 bg-purple-600 text-white rounded-xl"
+      >
+        Gacha
+      </button>
+    </section>
 
-      <div class="min-w-full p-6">
-        <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
-          Peluang muncul 3 angka dari 5 koin?
-        </div>
-      </div>
+    <script>
+      const pos = {}
 
-      <div class="min-w-full p-6">
-        <div class="bg-white p-12 rounded-xl shadow-xl text-xl fade-up">
-          Peluang jumlah dua dadu = 4?
-        </div>
-      </div>
+      function slide(id, dir) {
+        const el = document.getElementById(id)
+        const total = el.children.length
 
-    </div>
+        if (!(id in pos)) pos[id] = 0
 
-    <div class="flex justify-center gap-4 mt-6">
-      <button onclick="slide('carousel2', -1)" class="px-4 py-2 bg-black text-white rounded">Prev</button>
-      <button onclick="slide('carousel2', 1)" class="px-4 py-2 bg-black text-white rounded">Next</button>
-    </div>
-  </div>
-</section>
+        pos[id] += dir
 
-<!-- GACHA -->
-<section class="py-20 text-center px-6">
+        if (pos[id] < 0) pos[id] = total - 1
+        if (pos[id] >= total) pos[id] = 0
 
-  <h2 class="text-3xl font-bold mb-6 fade-up">Simulasi Gacha</h2>
+        el.style.transform = `translateX(-${pos[id] * 100}%)`
+      }
 
-  <div id="gachaCard"
-       class="mx-auto w-72 h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500">
-  </div>
+      /* GACHA */
+      const tiers = [
+        {
+          name: 'Common',
+          chance: 60,
+          items: [
+            { name: 'Subaru', img: 'img/subaru.jpg' },
+            { name: 'Nina', img: 'img/nina.jpg' }
+          ]
+        },
+        {
+          name: 'Rare',
+          chance: 30,
+          items: [{ name: 'Momoka', img: 'img/momoka.jpg' }]
+        },
+        {
+          name: 'Legendary',
+          chance: 10,
+          items: [{ name: 'Ultra Rare 🔥', img: 'img/rupa.jpg' }]
+        }
+      ]
 
-  <button onclick="gacha()"
-          class="px-6 py-3 bg-purple-600 text-white rounded-xl">
-    Gacha
-  </button>
+      function getTier() {
+        let rand = Math.random() * 100
+        for (let t of tiers) {
+          if (rand < t.chance) return t
+          rand -= t.chance
+        }
+      }
 
-</section>
+      function gacha() {
+        const card = document.getElementById('gachaCard')
+        const tier = getTier()
+        const item = tier.items[Math.floor(Math.random() * tier.items.length)]
 
-<script>
-const pos = {}
-
-function slide(id, dir) {
-  const el = document.getElementById(id)
-  const total = el.children.length
-
-  if (!(id in pos)) pos[id] = 0
-
-  pos[id] += dir
-
-  if (pos[id] < 0) pos[id] = total - 1
-  if (pos[id] >= total) pos[id] = 0
-
-  el.style.transform = `translateX(-${pos[id] * 100}%)`
-}
-
-/* GACHA */
-const tiers = [
-  {
-    name: "Common",
-    chance: 60,
-    items: [
-      { name: "Subaru", img: "img/subaru.jpg" },
-      { name: "Nina", img: "img/nina.jpg" }
-    ]
-  },
-  {
-    name: "Rare",
-    chance: 30,
-    items: [
-      { name: "Momoka", img: "img/momoka.jpg" }
-    ]
-  },
-  {
-    name: "Legendary",
-    chance: 10,
-    items: [
-      { name: "Ultra Rare 🔥", img: "img/rupa.jpg" }
-    ]
-  }
-]
-
-function getTier() {
-  let rand = Math.random() * 100
-  for (let t of tiers) {
-    if (rand < t.chance) return t
-    rand -= t.chance
-  }
-}
-
-function gacha() {
-  const card = document.getElementById('gachaCard')
-  const tier = getTier()
-  const item = tier.items[Math.floor(Math.random() * tier.items.length)]
-
-  card.innerHTML = `
+        card.innerHTML = `
     <img src="${item.img}" class="w-full h-full object-cover">
     <div class="absolute inset-0 bg-black/40"></div>
     <div class="absolute bottom-0 w-full p-4 text-white text-center">
@@ -220,24 +263,23 @@ function gacha() {
     </div>
   `
 
-  card.classList.remove('opacity-0','translate-y-10')
-}
-
-/* ANIMATION */
-document.addEventListener('DOMContentLoaded', () => {
-  const els = document.querySelectorAll('.fade-up')
-
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('show')
+        card.classList.remove('opacity-0', 'translate-y-10')
       }
-    })
-  })
 
-  els.forEach(el => obs.observe(el))
-})
-</script>
+      /* ANIMATION */
+      document.addEventListener('DOMContentLoaded', () => {
+        const els = document.querySelectorAll('.fade-up')
 
-</body>
+        const obs = new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('show')
+            }
+          })
+        })
+
+        els.forEach(el => obs.observe(el))
+      })
+    </script>
+  </body>
 </html>
