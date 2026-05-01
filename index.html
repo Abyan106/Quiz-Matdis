@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peluang Diskrit</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -49,21 +50,23 @@
   <body class="bg-gray-100 text-gray-800">
     <!-- HERO -->
     <section
-      class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden px-4"
+      class="parallax h-screen flex items-center justify-center text-white text-center px-5"
     >
       <img
         src="https://images.unsplash.com/photo-1509228468518-180dd4864904"
-        class="absolute w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="absolute inset-0 bg-black/65"></div>
 
-      <div class="relative z-10 fade-up max-w-3xl">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+      <div class="relative z-10 w-full max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
           Peluang Diskrit
         </h1>
 
-        <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+        <p
+          class="text-base sm:text-lg md:text-xl leading-relaxed sm:leading-loose max-w-3xl mx-auto"
+        >
           Dalam kehidupan sehari-hari, banyak peristiwa yang tampak acak,
           seperti pelemparan koin, dadu, maupun sistem gacha dalam permainan.
           Secara matematis, kejadian tersebut dapat dianalisis menggunakan
@@ -76,12 +79,12 @@
 
     <!-- PARALLAX -->
     <section
-      class="parallax min-h-screen flex items-center justify-center text-white text-center px-4 sm:px-6"
+      class="parallax min-h-[80vh] md:min-h-screen flex items-center justify-center text-white text-center px-5 py-16"
     >
-      <div class="bg-black/50 p-6 sm:p-8 rounded-xl max-w-2xl fade-up">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-3">Konsep Dasar</h2>
+      <div class="bg-black/55 p-6 sm:p-8 md:p-10 rounded-2xl w-full max-w-3xl">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-5">Konsep Dasar</h2>
 
-        <p class="text-sm sm:text-base leading-relaxed">
+        <p class="text-base sm:text-lg leading-relaxed sm:leading-loose">
           Peluang diskrit merupakan ukuran kemungkinan suatu kejadian dalam
           ruang sampel yang terbatas. Ruang sampel adalah kumpulan seluruh hasil
           yang mungkin terjadi. Sebagai contoh, pada pelemparan koin, ruang
@@ -106,43 +109,55 @@
       </h2>
 
       <div class="max-w-5xl mx-auto overflow-hidden relative">
-        <div
-          id="carousel1"
-          class="flex w-full transition-transform duration-500 ease-in-out"
-        >
-          <!-- CARD -->
-          <div class="min-w-full p-2 sm:p-6">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-              <img
-                src="img/card1.jpg"
-                class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
-              />
-              <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
-                Peluang muncul angka 3 pada dadu adalah 1/6
+        <!-- WRAPPER -->
+        <div class="overflow-hidden">
+          <!-- SLIDER -->
+          <div
+            id="carousel1"
+            class="flex transition-transform duration-500 ease-in-out"
+          >
+            <!-- CARD 1 -->
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden fade-up"
+              >
+                <img
+                  src="img/card1.jpg"
+                  class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
+                />
+                <div class="p-4 sm:p-6 text-center">
+                  Peluang muncul angka 3 pada dadu adalah 1/6
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="min-w-full p-2 sm:p-6">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-              <img
-                src="img/card2.jpg"
-                class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
-              />
-              <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
-                Peluang angka genap pada dadu adalah 1/2
+            <!-- CARD 2 -->
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden fade-up"
+              >
+                <img
+                  src="img/card2.jpg"
+                  class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
+                />
+                <div class="p-4 sm:p-6 text-center">
+                  Peluang angka genap pada dadu adalah 1/2
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="min-w-full p-2 sm:p-6">
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
-              <img
-                src="img/card3.jpg"
-                class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
-              />
-              <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
-                Peluang kartu As adalah 1/13
+            <!-- CARD 3 -->
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden fade-up"
+              >
+                <img
+                  src="img/card3.jpg"
+                  class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover"
+                />
+                <div class="p-4 sm:p-6 text-center">
+                  Peluang kartu As adalah 1/13
+                </div>
               </div>
             </div>
           </div>
@@ -174,32 +189,34 @@
       </h2>
 
       <div class="max-w-5xl mx-auto overflow-hidden relative">
-        <div
-          id="carousel2"
-          class="flex w-full transition-transform duration-500 ease-in-out"
-        >
-          <div class="min-w-full p-2 sm:p-6">
-            <div
-              class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
-            >
-              Peluang muncul 3 angka dari 5 koin?
+        <div class="overflow-hidden">
+          <div
+            id="carousel2"
+            class="flex transition-transform duration-500 ease-in-out"
+          >
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
+              >
+                Peluang muncul 3 angka dari 5 koin?
+              </div>
             </div>
-          </div>
 
-          <div class="min-w-full p-2 sm:p-6">
-            <div
-              class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
-            >
-              Peluang jumlah dua dadu = 4?
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
+              >
+                Peluang jumlah dua dadu = 4?
+              </div>
             </div>
-          </div>
 
-          <div class="min-w-full p-2 sm:p-6">
-            <div
-              class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
-            >
-              Berapakah peluang mendapatkan kombinasi Straight Flush dari 5
-              kartu yang diambil secara acak?
+            <div class="min-w-full p-4">
+              <div
+                class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up"
+              >
+                Berapakah peluang mendapatkan kombinasi Straight Flush dari 5
+                kartu yang diambil secara acak?
+              </div>
             </div>
           </div>
         </div>
@@ -235,7 +252,7 @@
 
       <div
         id="gachaCard"
-        class="mx-auto w-[260px] sm:w-72 h-[360px] sm:h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500"
+        class="mx-auto w-full max-w-[280px] sm:max-w-sm h-[380px] sm:h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500"
       ></div>
 
       <button
@@ -278,7 +295,7 @@
           chance: 30,
           items: [
             { name: 'Momoka', img: 'img/momoka.jpg' },
-            { name: 'tomo', img: 'img/tomo.png' }
+            { name: 'Tomo', img: 'img/tomo.png' }
           ]
         },
         {
