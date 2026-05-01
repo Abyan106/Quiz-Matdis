@@ -1,0 +1,162 @@
+<body class="bg-gray-100 text-gray-800">
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden px-4">
+  <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904"
+       class="absolute w-full h-full object-cover">
+
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 fade-up max-w-3xl">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+      Peluang Diskrit
+    </h1>
+
+    <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+      Dalam kehidupan sehari-hari, banyak peristiwa yang tampak acak,
+      seperti pelemparan koin, dadu, maupun sistem gacha dalam permainan.
+      Secara matematis, kejadian tersebut dapat dianalisis menggunakan
+      konsep peluang. Salah satu bentuknya adalah peluang diskrit, yaitu
+      peluang yang berkaitan dengan hasil yang dapat dihitung dan
+      didaftarkan secara jelas.
+    </p>
+  </div>
+</section>
+
+<!-- PARALLAX -->
+<section class="parallax min-h-screen flex items-center justify-center text-white text-center px-4 sm:px-6">
+  <div class="bg-black/50 p-6 sm:p-8 rounded-xl max-w-2xl fade-up">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-3">Konsep Dasar</h2>
+
+    <p class="text-sm sm:text-base leading-relaxed">
+      Peluang diskrit merupakan ukuran kemungkinan suatu kejadian dalam
+      ruang sampel yang terbatas. Ruang sampel adalah kumpulan seluruh hasil
+      yang mungkin terjadi.
+
+      <br><br>
+
+      Untuk menghitung peluang:
+      <br><br>
+      <b>P(A) = n(A) / n(S)</b>
+    </p>
+  </div>
+</section>
+
+<!-- CONTOH -->
+<section class="py-16 sm:py-20 px-4 sm:px-6">
+  <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 fade-up">
+    Contoh Kehidupan Sehari-hari
+  </h2>
+
+  <div class="max-w-5xl mx-auto overflow-hidden relative">
+    <div id="carousel1"
+         class="flex w-full transition-transform duration-500 ease-in-out">
+
+      <!-- CARD -->
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+          <img src="img/card1.jpg"
+               class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover">
+          <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
+            Peluang muncul angka 3 pada dadu adalah 1/6
+          </div>
+        </div>
+      </div>
+
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+          <img src="img/card2.jpg"
+               class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover">
+          <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
+            Peluang angka genap pada dadu adalah 1/2
+          </div>
+        </div>
+      </div>
+
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden fade-up">
+          <img src="img/card3.jpg"
+               class="w-full h-[250px] sm:h-[350px] md:h-[420px] object-cover">
+          <div class="p-4 sm:p-6 text-center text-sm sm:text-base">
+            Peluang kartu As adalah 1/13
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center gap-4 mt-4 sm:mt-6">
+      <button onclick="slide('carousel1', -1)"
+              class="px-4 py-2 bg-black text-white rounded text-sm sm:text-base">
+        Prev
+      </button>
+      <button onclick="slide('carousel1', 1)"
+              class="px-4 py-2 bg-black text-white rounded text-sm sm:text-base">
+        Next
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- LATSOL -->
+<section class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-200">
+  <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 fade-up">
+    Latihan Soal
+  </h2>
+
+  <div class="max-w-5xl mx-auto overflow-hidden relative">
+    <div id="carousel2"
+         class="flex w-full transition-transform duration-500 ease-in-out">
+
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up">
+          Peluang muncul 3 angka dari 5 koin?
+        </div>
+      </div>
+
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up">
+          Peluang jumlah dua dadu = 4?
+        </div>
+      </div>
+
+      <div class="min-w-full p-2 sm:p-6">
+        <div class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up">
+          Berapakah peluang mendapatkan Straight Flush?
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex justify-center gap-4 mt-4 sm:mt-6">
+      <button onclick="slide('carousel2', -1)"
+              class="px-4 py-2 bg-black text-white rounded text-sm sm:text-base">
+        Prev
+      </button>
+      <button onclick="slide('carousel2', 1)"
+              class="px-4 py-2 bg-black text-white rounded text-sm sm:text-base">
+        Next
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- GACHA -->
+<section class="py-16 sm:py-20 text-center px-4 sm:px-6">
+  <h2 class="text-2xl sm:text-3xl font-bold mb-6 fade-up">
+    Simulasi Gacha
+  </h2>
+
+  <p class="max-w-2xl mx-auto mb-8 text-sm sm:text-base fade-up">
+    Simulasi berikut menggambarkan konsep peluang diskrit melalui sistem gacha.
+  </p>
+
+  <div id="gachaCard"
+       class="mx-auto w-[260px] sm:w-72 h-[360px] sm:h-[420px] rounded-xl shadow-xl overflow-hidden relative mb-6 opacity-0 translate-y-10 transition-all duration-500">
+  </div>
+
+  <button onclick="gacha()"
+          class="px-6 py-3 bg-purple-600 text-white rounded-xl text-sm sm:text-base">
+    Gacha
+  </button>
+</section>
