@@ -158,13 +158,13 @@
         <div id="carousel2" class="flex transition-transform duration-500 ease-in-out">
           <div class="min-w-full p-4">
             <div class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up">
-              Peluang muncul 3 angka dari 5 koin?
+              Peluang muncul 3 angka dari 5 kali pelemparan koin?
             </div>
           </div>
 
           <div class="min-w-full p-4">
             <div class="bg-white p-6 sm:p-12 rounded-xl shadow-xl text-base sm:text-xl fade-up">
-              Peluang jumlah dua dadu = 4?
+              Peluang jumlah pelemparan satu kali dua dadu = 4?
             </div>
           </div>
 
@@ -228,28 +228,42 @@
 
     /* GACHA */
     const tiers = [
-      {
-        name: 'Common',
-        chance: 60,
-        items: [
-          { name: 'Subaru', img: 'img/subaru.jpg' },
-          { name: 'Nina', img: 'img/nina.jpg' }
-        ]
-      },
-      {
-        name: 'Rare',
-        chance: 30,
-        items: [
-          { name: 'Momoka', img: 'img/momoka.jpg' },
-          { name: 'Tomo', img: 'img/tomo.png' }
-        ]
-      },
-      {
-        name: 'Legendary',
-        chance: 10,
-        items: [{ name: 'Rupa', img: 'img/rupa.jpg' }]
-      }
+  {
+    name: 'R',
+    chance: 60,
+    items: [
+      { name: 'Subaru', img: 'img/subaru.jpg' },
+      { name: 'Nina', img: 'img/nina.jpg' },
+
+      { name: 'Chrono Genesis', img: 'img/Chrono_Genesis_(R).jpg' },
+      { name: 'Curren Bouquetdor', img: 'img/Curren_Bouquet_dor_(R).jpg' },
+      { name: 'Daring Tact', img: 'img/Daring_Tact_(R).jpg' },
+      { name: 'Gran Alegria', img: 'img/Gran_Alegria_(R).jpg' },
+      { name: 'Lucky Lilac', img: 'img/Lucky_Lilac_(R).jpg' },
+      { name: 'Mejiro Bright', img: 'img/Mejiro_Bright_(R).jpg' }
     ]
+  },
+  {
+    name: 'SR',
+    chance: 30,
+    items: [
+      { name: 'Momoka', img: 'img/momoka.jpg' },
+      { name: 'Tomo', img: 'img/tomo.png' },
+
+      { name: 'Loves Only You', img: 'img/Loves_Only_You_(SR).jpg' },
+      { name: 'Mejiro Ardan', img: 'img/Mejiro_Ardan_(SR).jpg' },
+      { name: 'Victoire Pisa', img: 'img/Victoire_Pisa_(SR).jpg' }
+    ]
+  },
+  {
+    name: 'SSR',
+    chance: 10,
+    items: [
+      { name: 'Rupa', img: 'img/rupa.jpg' },
+      { name: 'Almond Eye', img: 'img/Almond_Eye_(SSR).jpg' }
+    ]
+  }
+]
 
     function getTier() {
       let rand = Math.random() * 100
